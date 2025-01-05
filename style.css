@@ -314,6 +314,13 @@ header {
     line-height: 1.6;
 }
 
+.project-table a{
+    text-decoration: underline;
+    color: #e0e0e0;
+    padding-left: 10px;
+}
+
+
 @media (max-width: 768px) {
     #projects h2 {
         font-size: 2rem;
