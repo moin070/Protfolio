@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+   
+    <header>
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+        <div class="menu" id="menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <!-- <a href="#resume">Resume</a> -->
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+    <div class="portfolio" id="home">
+        <div class="portfolio-content">
+            <div class="profile">
+                <h1>Welcome To My Portfolio</h1>
+                <p class="homep">My self</p>
+                <h2>Moin Khan</h2>
+                <p class="homep">Full Stack Python Developer</p>
+                
+
+                <div class="footer-container">
+                    <div class="social-icons">
+                        <a href="https://github.com/moin070" target="_blank"><img src="assets/Github.png" alt="GitHub"></a>
+        
+                        <a href="https://www.linkedin.com/in/moin-khan-158b8824b/" target="_blank"><img src="assets/Linkidn.png" alt="LinkedIn"></a>
+
+                        <a href="https://x.com/Moin_k00" target="_blank"><img src="assets/Twitter.png" alt="Twitter"></a>
+        
+            
+        
+                        <a href="mailto:mkpmoinkhan@gmail.com" target="_blank"><img src="assets/email.png" alt="Email"></a>
+                    </div>
+                </div>
+
+            </div>
+            <img src="assets/mk1.png" alt="Profile Picture">
+        </div>
+    </div>
+
+    <!-- about me  -->
+    <section id="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>Hello! I'm Moin Khan, a passionate Full Stack Python Developer. I specialize in building dynamic and responsive web applications using Python, Django, HTML, CSS, and JavaScript. With a strong foundation in both front-end and back-end technologies, I enjoy creating user-friendly and efficient solutions to solve complex problems.</p>
+            <p>In my free time, I love learning new technologies, working on personal projects, and exploring new ideas that push the boundaries of what's possible in web development.</p>
+            
+            <!-- Additional Content: Skills Section -->
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>SQL</li>
+                    <li>Git  GitHub</li>
+                    <li>REST APIs</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
+            
+            <!-- Additional Content: Experience Section -->
+            <div class="experience">
+                <h3>Experience</h3>
+                <p>I have worked as an intern at TECHNOBITSS PVT. LTD. Pune, where I had the opportunity to contribute to various Python-based projects, gaining hands-on experience in developing web applications using Django and working with databases like Oracle , MySQL and PostgreSQL.</p>
+            </div>
+    
+            <!-- Additional Content: Hobbies Section -->
+            <div class="hobbies">
+                <h3>Hobbies</h3>
+                <ul>
+                    <li>Coding and building personal projects</li>
+                    <li>Reading technology blogs and books</li>
+                    <li>Exploring new frameworks and libraries</li>
+                    <li>Playing video games</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- project section -->
+    <section id="projects">
+        <div class="projects-container">
+            <h2>My Projects</h2>
+    
+            <!-- Project 1 -->
+            <table class="project-table">
+                <thead>
+                    <tr>
+                        <th>Project 1</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <strong>Title:</strong> Heart Disease Prediction <br>
+                            <strong>Description:</strong> This project predicts whether a patient has heart disease based on various health metrics. <br>
+                            <strong>Technologies Used:</strong> Python, Machine Learning, Pandas, Scikit-learn, Jupyter Notebook
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <!-- Project 2 -->
+            <table class="project-table">
+                <thead>
+                    <tr>
+                        <th>Project 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <strong>Title:</strong> Personal Blog <br>
+                            <strong>Description:</strong> A simple personal blog built using Django where users can read, comment, and share posts. <br>
+                            <strong>Technologies Used:</strong> Python, Django, HTML, CSS, JavaScript
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <!-- Project 3 -->
+            <table class="project-table">
+                <thead>
+                    <tr>
+                        <th>Project 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <strong>Title:</strong> Sure Correct Aligner <br>
+                            <strong>Description:</strong> A frontend-only project for displaying aligners information with a responsive user interface. <br>
+                            <strong>Technologies Used:</strong> HTML, CSS, JavaScript
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <!-- Add more projects here -->
+        </div>
+    </section>
+    
+    
+    <!-- contact page -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <p>If you have any questions or would like to get in touch with me, feel free to send a message!</p>
+    
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+    
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer-container">
+            <h3>Connect with Me</h3>
+            <div class="social-icons">
+                <a href="https://wa.me/7620946947" target="_blank"><img src="assets/Whatsapp.png" alt="WhatsApp"></a>
+
+
+                <a href="https://github.com/moin070" target="_blank"><img src="assets/Github.png" alt="GitHub"></a>
+
+                <a href="https://www.linkedin.com/in/moin-khan-158b8824b/" target="_blank"><img src="assets/Linkidn.png" alt="LinkedIn"></a>
+
+                <a href="https://www.instagram.com/moin_k00/" target="_blank"><img src="assets/Instagram.png" alt="Instagram"></a>
+
+                <a href="https://x.com/Moin_k00" target="_blank"><img src="assets/Twitter.png" alt="Twitter"></a>
+
+                <a href="https://t.me/moin_k00" target="_blank"><img src="assets/Telegram.png" alt="Telegram"></a>
+
+                <a href="mailto:mkpmoinkhan@gmail.com" target="_blank"><img src="assets/email.png" alt="Email"></a>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
