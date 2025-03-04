@@ -1,214 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
 <body>
-   
-    <header>
-        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
-        <div class="menu" id="menu">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <!-- <a href="#resume">Resume</a> -->
-            <a href="#contact">Contact</a>
-        </div>
-    </header>
-    <div class="portfolio" id="home">
-        <div class="portfolio-content">
-            <div class="profile">
-                <h1>Welcome To My Portfolio</h1>
-                <p class="homep">My name is</p>
-                <h2>Moin Khan</h2>
-                <p class="homep">Full Stack Python Developer</p>
-                
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="menu-toggle">☰</div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-                <div class="footer-container">
-                    <div class="social-icons">
-                        <a href="https://github.com/moin070" target="_blank"><img src="assets/Github.png" alt="GitHub"></a>
-        
-                        <a href="https://www.linkedin.com/in/moin-khan-158b8824b/" target="_blank"><img src="assets/Linkidn.png" alt="LinkedIn"></a>
 
-                        <a href="https://x.com/Moin_k00" target="_blank"><img src="assets/Twitter.png" alt="Twitter"></a>
-        
-            
-        
-                        <a href="mailto:mkpmoinkhan@gmail.com" target="_blank"><img src="assets/email.png" alt="Email"></a>
-                    </div>
-                </div>
-
-            </div>
-            <img src="assets/mk1.png" alt="Profile Picture">
-        </div>
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <div class="home-content">
+      <img src="assets/myimg.jpg" alt="moin khan" class="profile-img">
+      <div class="text">
+        <h1>MOIN KHAN</h1>
+        <p><em>Full Stack Developer</em></p>
+      </div>
     </div>
+  </section>
+  
 
-    <!-- about me  -->
-    <section id="about">
-        <div class="about-content">
-            <h2>About Me</h2>
-            <p>Hello! I'm Moin Khan, a passionate Full Stack Python Developer. I specialize in building dynamic and responsive web applications using Python, Django, HTML, CSS, and JavaScript. With a strong foundation in both front-end and back-end technologies, I enjoy creating user-friendly and efficient solutions to solve complex problems.</p>
-            <p>In my free time, I love learning new technologies, working on personal projects, and exploring new ideas that push the boundaries of what's possible in web development.</p>
-            
-            <!-- Additional Content: Skills Section -->
-            <div class="skills">
-                <h3>Skills</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>Django</li>
-                    <li>HTML, CSS, JavaScript</li>
-                    <li>SQL</li>
-                    <li>Git  GitHub</li>
-                    <li>REST APIs</li>
-                    <li>Linux</li>
-                </ul>
-            </div>
-            
-            <!-- Additional Content: Experience Section -->
-            <div class="experience">
-                <h3>Experience</h3>
-                <p>I have worked as an intern at TECHNOBITSS PVT. LTD. Pune, where I had the opportunity to contribute to various Python-based projects, gaining hands-on experience in developing web applications using Django and working with databases like Oracle , MySQL and PostgreSQL.</p>
-            </div>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hello! <span>I self Moin Khan</span>, I am a highly motivated Frontend Developer with a strong foundation in Angular, JavaScript, and web technologies. Passionate about building scalable applications, I have experience working with REST APIs, Git, and modern frontend frameworks, along with expertise in component-based architecture, routing, and state management using Angular and React.js. I have completed my Bachelor of Engineering in Computer Engineering (2024) and gained practical experience through internships, where I developed responsive web interfaces, integrated frontend components with backend functionalities, and worked on API integration, user authentication, and database management. During my internship at TECHNOBITSS PVT. LTD., Pune, I enhanced my skills in Python and web development, focusing on dynamic data management and frontend optimization. Additionally, as a Web Developer Trainee at Q-SPIDERS PVT. LTD., Pune, I worked on React.js-based projects, optimized website performance, and implemented database structures using SQL (Oracle, MySQL, PostgreSQL). I am a quick learner with strong problem-solving abilities, attention to detail, and a passion for adapting to new technologies, always eager to contribute to innovative and impactful projects.</p>
     
-            <!-- Additional Content: Hobbies Section -->
-            <div class="hobbies">
-                <h3>Hobbies</h3>
-                <ul>
-                    <li>Coding and building personal projects</li>
-                    <li>Reading technology blogs and books</li>
-                    <li>Exploring new frameworks and libraries</li>
-                    <li>Playing video games</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    
-    <!-- project section -->
-    <section id="projects">
-        <div class="projects-container">
-            <h2>My Projects</h2>
-    
-            <!-- Project 1 -->
-            <table class="project-table">
-                <thead>
-                    <tr>
-                        <th>Project 1</th>
-                    </tr>
-                </thead>
-                <tbody>
-                        
-                    <tr>
-                        <td>
-                            <strong>Title:</strong> PERSONAL FINANCE TRACKER <br><hr>
-                            <strong>Description:</strong> A : Main goal of the project to help user to track and manage their income, expenses,and saving efficiently through a user-friendly dashboard. <br> <hr>
-                            <strong>Technologies Used:</strong> Django, SQLite, HTML ,CSS, Bootstrap, Git command line, Python-anywhere
-                        </td>
-                    </tr>
+    <h3>Education</h3>
+    <p>I have completed my Bachelor of Engineering (B.E.) in Computer Engineering from Jaihind College Of Engineering in 2024, where I gained expertise in software development, database management, web technologies, and algorithms. During my academic journey, I worked on various projects, including a Heart Disease Prediction System, where I was responsible for designing the frontend and managing patient data using SQL. Prior to my graduation, I completed my Higher Secondary Education (12th) in the Science stream from G.R.P.S College, where I developed a strong foundation in Mathematics, Physics, and Computer Science, further strengthening my problem-solving skills. My early education began with my Secondary School (10th) from Ideal Public School, where I developed a keen interest in technology and programming, which later shaped my career in web and software development.</p>
 
-                </tbody>
-            </table>
-    
-            <!-- Project 2 -->
-            <table class="project-table">
-                <thead>
-                    <tr>
-                        <th>Project 2</th>
-                    </tr>
-                </thead>
-                <tbody>
+    <h3>Hobbies</h3>
+    <ul>
+      <li>Problem-solving and logical thinking</li>
+      <li>Building and designing web applications</li>
+      <li>Learning new technologies</li>
+      <li>Cricket and gaming</li>
+    </ul>
+  </section>
 
-                    
-                    <tr>
-                        <td>
-                            <strong>Title:</strong> RECRUITMENT SYSTEM <br> <hr>
-                            <strong>Description:</strong> : Designed and developed a comprehensive Recruitment System to manage and track
-                            the recruitment process, including candidates, job, Company Interviews. <br> <hr>
-                            <strong>Technologies Used:</strong> : Oracle, SQL.
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-    
-            <!-- Project 3 -->
-            <table class="project-table">
-                <thead>
-                    <tr>
-                        <th>Project 3</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <strong>Title:</strong> SURE CORRECT ALIGNER <br> <hr>
-                            <strong>Description:</strong> A frontend-only project for displaying aligners information with a responsive user interface. <br> <hr>
-                            <strong>Technologies Used:</strong> : HTML, CSS, JavaScript, Git command line, GitHub <br><hr>
-                            <strong>Link:</strong><a href="https://moin070.github.io/sure_correct_agliner/">Click here</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-    
-            <!-- Add more projects here -->
-        </div>
-    </section>
-    
-    
-    <!-- contact page -->
-    <section id="contact">
-        <div class="contact-container">
-            <h2>Contact Me</h2>
-            <p>If you have any questions or would like to get in touch with me, feel free to send a message!</p>
-    
-            <form action="#" method="post" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-                </div>
-    
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                </div>
-    
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                </div>
-    
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-        </div>
-    </section>
-    
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <div class="card" onclick="window.open('https://github.com/moin070/Betting-Application')">
+        <h3>Betting Application</h3>
+        <p> Developed a responsive web application displaying IPL matches, allowing users to place bets with a seamless frontend and backend integration using React.js, Node.js, and SQL.</p>
+      </div>
+      <div class="card" onclick="window.open('https://moin070.github.io/sure_correct_agliner/', '_blank')">
+        <h3>Sure Correct Aligner</h3>
+        <p>Built a fully functional frontend project showcasing aligner information with an attractive and user-friendly interface using HTML, CSS, and JavaScript.</p>
+    </div>
+      <div class="card" onclick="window.open('project3-link')">
+        <h3>SQL-based Social Media Analysis</h3>
+        <p>Analyzing user engagement and trends using SQL.</p>
+      </div>
+      <div class="card" onclick="window.open('https://github.com/moin070/personal-finance-tracker')">
+        <h3>Personal Finance Tracker</h3>
+        <p>A web application for managing income and expenses.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- footer -->
-    <footer id="footer">
-        <div class="footer-container">
-            <h3>Connect with Me</h3>
-            <div class="social-icons">
-                <a href="https://wa.me/7620946947" target="_blank"><img src="assets/Whatsapp.png" alt="WhatsApp"></a>
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+        <span><i class="fa-brands fa-html5"></i> HTML</span>
+        <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+        <span><i class="fa-brands fa-js"></i> JavaScript</span>
+        <span><i class="fa-brands fa-react"></i> React</span>
+        <span><i class="fa-brands fa-node-js"></i> Node.js</span>
+        <span><i class="fa-solid fa-database"></i> SQL</span>
+        <span><i class="fa-brands fa-python"></i> Python</span>
+        <span><i class="fa-brands fa-github"></i> GitHub</span>
+        <span><i class="fa-brands fa-linux"></i> Linux</span>
+    </div>
+</section>
 
 
-                <a href="https://github.com/moin070" target="_blank"><img src="assets/Github.png" alt="GitHub"></a>
 
-                <a href="https://www.linkedin.com/in/moin-khan-158b8824b/" target="_blank"><img src="assets/Linkidn.png" alt="LinkedIn"></a>
-
-                <a href="https://www.instagram.com/moin_k00/" target="_blank"><img src="assets/Instagram.png" alt="Instagram"></a>
-
-                <a href="https://x.com/Moin_k00" target="_blank"><img src="assets/Twitter.png" alt="Twitter"></a>
-
-                <a href="https://t.me/moin_k00" target="_blank"><img src="assets/Telegram.png" alt="Telegram"></a>
-
-                <a href="mailto:mkpmoinkhan@gmail.com" target="_blank"><img src="assets/email.png" alt="Email"></a>
-            </div>
-        </div>
-    </footer>
+  <!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form action="#" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/moin-khan-158b8824b/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/moin070" target="_blank">
+            <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a href="https://www.instagram.com/moin_k00/" target="_blank">
+            <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+        <a href="mailto:mkpmoinkhan@example.com">
+            <i class="fa-solid fa-envelope"></i> Email
+        </a>
+    </div>
     
+</section>
 
+
+  <script src="script.js"></script>
 </body>
 </html>
 
